@@ -1,0 +1,14 @@
+/* The first version of the Person record, needs to be renamed to "PersonV1" so
+ * that the generated class of the new version can take the place in the code as
+ * "Person".
+ */
+{
+  "type": "record",
+  "namespace": "com.opower.avro.example.model",
+  "name": "PersonV1",
+  "fields": [
+    {"name": "username", "type": "string"},
+    {"name": "password", "type": "string"},
+    {"name": "joined_on", "type": "long"}
+  ]
+}

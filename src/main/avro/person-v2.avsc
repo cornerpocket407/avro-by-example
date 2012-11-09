@@ -1,0 +1,12 @@
+{
+  "type": "record",
+  "namespace": "com.opower.avro.example.model",
+  "name": "Person",
+  "fields": [
+    {"name": "username", "type": "string"},
+    {"name": "password", "type": "string"},
+    {"name": "joined_on", "type": "long"},
+    /* Since this is a new field, it must be nullable or have a non-null default set */
+    {"name": "email", "type": ["string", "null"], "default": "null"}
+  ]
+}
