@@ -1,0 +1,10 @@
+{
+  "type": "record",
+  "doc": "An Order is what the Person chooses to purchase.",
+  "namespace": "com.opower.avro.example.model",
+  "name": "OrderV1",
+  "fields": [
+    {"name": "purchased_on", "type": "long",
+     "doc": "The offset from the UTC epoch when the order was purchased"}
+  ]
+}

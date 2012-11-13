@@ -21,6 +21,13 @@
     </dependencies>
 
     <build>
+        <resources>
+            <!-- Add the directory of Avro schemas as resources so that they
+                 can be referenced in code as well. -->
+            <resource>
+                <directory>src/main/avro</directory>
+            </resource>
+        </resources>
         <pluginManagement>
             <plugins>
                 <plugin>
